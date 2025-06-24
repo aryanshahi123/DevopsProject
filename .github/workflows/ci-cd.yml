@@ -27,7 +27,7 @@ jobs:
       - name: Push image to DockerHub
         run: |
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/nodeapp:latest
-
+#deployment
   deploy:
     name: Deploy to EC2 via Docker
     runs-on: ubuntu-latest
